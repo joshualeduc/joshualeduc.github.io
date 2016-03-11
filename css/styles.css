@@ -1,0 +1,34 @@
+.slider {
+  height: 200px;
+}
+.slider .slides {
+  height: 200px;
+  background-color: white;
+}
+
+.slider .slides li {
+
+}
+
+.slider .slides li img {
+  width: 100px;
+  height: auto;
+}
+.slider .slides li .caption {
+  top: 5%;
+  left: 25%;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.slider .indicators {
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+}
+
+.slider .indicators .indicator-item.active {
+  background-color: #b0bec5;
+}
