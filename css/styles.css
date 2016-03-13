@@ -6,18 +6,18 @@
   background-color: white;
 }
 
-.slider .slides li {
-
+.slider .slides li{
+  overflow-y: auto;
 }
 
 .slider .slides li img {
   width: 100px;
   height: auto;
+  margin-top: 20px;
 }
 .slider .slides li .caption {
-  top: 5%;
-  left: 125px;
-  width: 65%;
+  top: 5px;
+  left: 120px;
   color: rgba(0, 0, 0, 0.87);
 }
 
@@ -49,3 +49,15 @@
 #fade4 {
   opacity: 0;
 }
+
+/*.slider .slides li img {
+  width: 125px;
+  height: auto;
+  vertical-align: top;
+}
+.slider .slides li .caption {
+  display: inline-block;
+  position: static;
+  margin-left: 25px;
+  color: rgba(0, 0, 0, 0.87);
+}*/
