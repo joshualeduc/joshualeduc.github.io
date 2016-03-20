@@ -1,5 +1,7 @@
 .slider {
   height: 200px;
+  max-width: 1000px;
+  margin: auto;
 }
 .slider .slides {
   height: 200px;
@@ -19,6 +21,7 @@
   top: 5px;
   left: 120px;
   color: rgba(0, 0, 0, 0.87);
+  width: 77%;
 }
 
 .slider .indicators {
@@ -50,14 +53,57 @@
   opacity: 0;
 }
 
-/*.slider .slides li img {
-  width: 125px;
-  height: auto;
-  vertical-align: top;
+.bio {
+  text-indent: 50px;
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
-.slider .slides li .caption {
-  display: inline-block;
-  position: static;
-  margin-left: 25px;
-  color: rgba(0, 0, 0, 0.87);
-}*/
+
+.bio-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+#skills {
+  max-width: 1000px;
+  margin: auto;
+}
+
+#textarea1 {
+  min-height: 9.93rem;
+}
+
+/* label color */
+   .input-field label {
+     color: #b0bec5;
+   }
+   /* label underline color */
+   .input-field input[type=text], textarea.materialize-textarea{
+     border-bottom: 1px solid #90a4ae;
+     box-shadow: none;
+     color: white;
+   }
+   /* label focus color */
+   .input-field input[type=text]:focus + label, textarea.materialize-textarea:focus + label:not([readonly]){
+     color: #FFFFFF;
+   }
+   /* label underline focus color */
+   .input-field input[type=text]:focus, textarea.materialize-textarea:focus:not([readonly]){
+     border-bottom: 1px solid #FFFFFF;
+     box-shadow: 0 1px 0 0 #FFFFFF;
+   }
+   /* valid color */
+   /*.input-field input[type=text].valid {
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+   }*/
+   /* invalid color */
+   /*.input-field input[type=text].invalid {
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+   }*/
+   /* icon prefix focus color */
+   /*.input-field .prefix.active {
+     color: #000;
+   }*/
