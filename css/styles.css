@@ -1,7 +1,5 @@
 .slider {
   height: 200px;
-  max-width: 1000px;
-  margin: auto;
 }
 .slider .slides {
   height: 200px;
@@ -60,13 +58,28 @@
   margin-bottom: 0px;
 }
 
-.bio-container {
-  max-width: 1000px;
+#aboutme {
+  max-width: 900px;
+  margin: auto;
+}
+
+#projects {
+  max-width: 900px;
   margin: auto;
 }
 
 #skills {
-  max-width: 1000px;
+  max-width: 900px;
+  margin: auto;
+}
+
+#references {
+  max-width: 900px;
+  margin: auto;
+}
+
+#contact {
+  max-width: 900px;
   margin: auto;
 }
 
