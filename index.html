@@ -66,7 +66,7 @@
             </div>
             <div class="card-content">
               <span class="card-title activator grey-text text-darken-4">Dojo<i class="material-icons right">more_vert</i></span>
-              <p><a href="#">Link to live project</a><span class="right"><a href="https://github.com/joshualeduc/dojo-prototype">Link to Github</a></span></p>
+              <p><a href="https://serene-taiga-92032.herokuapp.com">Link to live project (Chrome needed)</a><span class="right"><a href="https://github.com/joshualeduc/dojo-prototype">Link to Github</a></span></p>
             </div>
             <div class="card-reveal">
               <span class="card-title grey-text text-darken-4">Dojo<i class="material-icons right">close</i></span>
@@ -262,9 +262,9 @@
           <div class="slider">
             <ul class="slides">
               <li>
-                <img class="responsive-img circle" src="images/leduc.jpg" alt="">
+                <img class="responsive-img circle" src="images/kyle.jpg" alt="">
                 <p class="caption">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto soluta dolorum obcaecati officia blanditiis recusandae cupiditate laboriosam odio sed beatae, unde placeat, quia. In laboriosam sunt, obcaecati voluptate, ipsum commodi.
+                  Josh has a gift for mastering new technologies and skills in an unbelievably short amount of time. He's highly competent and extremely easy to work with - the perfect team player.
                 </p>
               </li>
               <li>
@@ -293,14 +293,15 @@
           <div class="col s12 center">
             <h5 class="blue-grey-text text-lighten-5">Contact Me</h5>
             <h6 class="blue-grey-text text-lighten-5">(Not working yet)</h6>
-            <div class="row">
+            <form class="row" method="post" name="contact_form"
+action="contact-form-handler.php">
               <div class="col s12 l6">
                 <div class="input-field">
-                  <input class="validate" id="form-name" type="text">
+                  <input class="validate" id="form-name" type="text" name="name">
                   <label for="form-name">Name</label>
                 </div>
                 <div class="input-field">
-                  <input class="validate" id="form-email" type="text">
+                  <input class="validate" id="form-email" type="text" name="email">
                   <label for="form-email">Email</label>
                 </div>
                 <div class="input-field">
@@ -309,15 +310,17 @@
                 </div>
               </div>
               <div class="col s12 l6 input-field">
-                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                <textarea id="textarea1" class="materialize-textarea" name="message"></textarea>
                 <label for="textarea1">Body of Email</label>
               </div>
-            </div>
-            <button class="btn-large waves-effect waves-light blue-grey lighten-5 blue-grey-text" type="submit">Send Email</button>
+              <button class="btn-large waves-effect waves-light blue-grey lighten-5 blue-grey-text" type="submit" value="Submit">Send Email</button>
+            </form> 
           </div>
         </div>
       </div>
     </div>
+    
+    
     <div class="footer-copyright">
       <div class="container">
       2016 <span class="brown-text text-lighten-3">joshualeduc.com</span>
@@ -330,6 +333,16 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  
+  <script language="JavaScript">
+  var frmvalidator  = new Validator("contactform");
+  frmvalidator.addValidation("name","req","Please provide your name");
+  frmvalidator.addValidation("email","req","Please provide your email");
+  frmvalidator.addValidation("email","email",
+    "Please enter a valid email address");
+  </script>
 
   </body>
 </html>
+
+
