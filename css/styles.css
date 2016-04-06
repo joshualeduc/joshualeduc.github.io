@@ -32,7 +32,7 @@
 }
 
 .slider .indicators .indicator-item.active {
-  background-color: #b0bec5;
+  background-color: #29b6f6;
 }
 
 #fade1 {
@@ -89,11 +89,11 @@
 
 /* label color */
    .input-field label {
-     color: #b0bec5;
+     color: #80d8ff ;
    }
    /* label underline color */
    .input-field input[type=text], textarea.materialize-textarea{
-     border-bottom: 1px solid #90a4ae;
+     border-bottom: 1px solid #80d8ff ;
      box-shadow: none;
      color: white;
    }
