@@ -19,7 +19,19 @@
   top: 5px;
   left: 120px;
   color: rgba(0, 0, 0, 0.87);
-  width: 77%;
+  width: 60%;
+}
+
+@media only screen and (min-width: 450px) {
+  .slider .slides li .caption {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .slider .slides li .caption {
+    width: 74%;
+  }
 }
 
 .slider .indicators {
